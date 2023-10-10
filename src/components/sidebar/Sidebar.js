@@ -13,7 +13,7 @@ import { Button } from '@mui/material';
 import "./Sidebar.css";
 
 
-function Sidebar() {
+const Sidebar = () => {
   return (
     <div className="sidebar">
         {/* ツイッターアイコン */}
@@ -31,6 +31,6 @@ function Sidebar() {
         <Button variant="outlined" className="sidebar--tweet">ツイートする</Button>
     </div>
   )
-}
+};
 
 export default Sidebar
