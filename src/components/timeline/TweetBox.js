@@ -1,7 +1,7 @@
 import { Avatar, Button } from '@mui/material';
 import React, { useState } from 'react'
 import "./TweetBox.css";
-import { addDoc, collection } from "firebase/firestore"; 
+import { addDoc, collection, serverTimestamp } from "firebase/firestore"; 
 import db from "../../firebase"
 
 const TweetBox = () => {
@@ -14,12 +14,13 @@ const TweetBox = () => {
   const sendTweet = (e) => {
     e.preventDefault();
     addDoc(collection(db, "posts"), {
-      displayName: "Reactアプリ",
-      username: "山田太郎",
+      displayName: "Reactユーザー",
+      username: "テスト太郎",
       verified: true,
       text: tweetMessage,
-      avatar: "http://shincode.info/wp-content/uploads/2021/12/icon.png",
-      image: tweetImage
+      avatar: "",
+      image: tweetImage,
+      timestamp: serverTimestamp()
     })
 
     setTweetMessage("");

@@ -15,7 +15,7 @@ const Widgets = () => {
             { /* ライブラリを追加 */ }
             <TwitterTweetEmbed tweetId={"1711498886265659797"}/>
             <TwitterTimelineEmbed sourceType="profile" screenName="X" options={{height: 400}} />
-            <TwitterShareButton url={"https://twitter.com/reinosuke123"} options={{text: "React学習中", via: "test"}} />
+            <TwitterShareButton url={"https://twitter.com/"} options={{text: "ReactApp", via: "test"}} />
         </div>
     </div>
   )

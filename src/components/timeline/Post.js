@@ -1,6 +1,5 @@
 import { ChatBubbleOutline, FavoriteBorder, PublishOutlined, Repeat, VerifiedUser } from '@mui/icons-material'
 import { Avatar } from '@mui/material'
-import React from 'react'
 import "./Post.css"
 
 const Post = ({displayName, username, verified, text, image, avatar}) => {
